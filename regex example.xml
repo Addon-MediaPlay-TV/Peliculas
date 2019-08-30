@@ -1,0 +1,6 @@
+REGEX RAPIDVIDEO
+<regex>
+<name>rapidvideo</name>
+<expres>source src="([^"]+)" type="video\/mp4" label=".*p"</expres>
+<page></page>
+</regex>
