@@ -1,26 +1,29 @@
 <item>
-<title></title>
-<thumbnail></thumbnail>
-<fanart></fanart>
-<link>http://</link>
-</item>
-<title></title>
-<thumbnail></thumbnail>
-<fanart></fanart>
-<link>http://</link>
+<title>[COLOR YELLOW]480p[/COLOR]-[COLOR White]RAPIDVIDEO[/COLOR]</title>
+<thumbnail>http://</thumbnail>
+<fanart>http://</fanart>
+<link>$dogerex[rapidvideo.param1]</link>
 <regex>
-<name></name>
-<page></page>
-<expres></expres>
+<name>rapidvideo</name>
+<expres>source src="([^"]+)" type="video\/mp4" label="480p"</expres>
+<page>https://rapidvid.to/v/G6HGK57097</page>
 </regex>
 </item>
-<title></title>
+<item>
+<title>[COLOR YELLOW]480p[/COLOR]-[COLOR White]Clipwatching[/COLOR]</title>
+<thumbnail>http://</thumbnail>
+<fanart>http://</fanart>
+<urlsolve>https://clipwatching.com/chqg64ik0nmt/The_Fast_and_the_Furious_3_Tokyo_Race_[BluRay_Rip][AC3_5.1_Castellano][2001][www.pctnew.com].avi.html</urlsolve>
+</item>
+<item>
+<title>[COLOR YELLOW]480p[/COLOR]-[COLOR White]Streamcloud[/COLOR]</title>
 <thumbnail></thumbnail>
 <fanart></fanart>
-<link>http://</link>
-<regex>
-<name></name>
-<page></page>
-<expres></expres>
-</regex>
+<urlsolve>http://streamcloud.eu/tqqfl9sgpj8e/Tokio_Race_By_TuPaadre.mp4.html</urlsolve>
+</item>
+<item>
+<title>[COLOR YELLOW]480p[/COLOR]-[COLOR White]Uptobox[/COLOR]</title>
+<thumbnail>http://</thumbnail>
+<fanart>http://</fanart>
+<link>https://uptostream.com/omm51gxza540</link>
 </item>
