@@ -3,7 +3,6 @@
 <thumbnail>http://</thumbnail>
 <fanart>http://</fanart>
 <urlsolve>https://www.rapidvideo.com/v/G6ICUORWD5</urlsolve>
-<regex>
 </item>
 <item>
 <title>[COLOR YELLOW]Streamcloud[/COLOR]</title>
@@ -16,4 +15,16 @@
 <thumbnail>http://</thumbnail>
 <fanart>http://</fanart>
 <urlsolve>https://uptostream.com/5dqsiqxtr2ib</urlsolve>
+</item>
+<item>
+<title>[COLOR YELLOW]CLIPWATCHING[/COLOR]</title>
+<thumbnail>http://</thumbnail>
+<fanart>http://</fanart>
+<urlsolve>https://clipwatching.com/12v0wjamtbke/A_todo_gas_3_(720p).avi.html</urlsolve>
+</item>
+<item>
+<title>[COLOR YELLOW]VERYSTREAM[/COLOR]</title>
+<thumbnail>http://</thumbnail>
+<fanart>http://</fanart>
+<urlsolve>https://verystream.com/stream/9FPyydvhs62/A_todo_gas_3_%28720p%29.avi.html</urlsolve>
 </item>
