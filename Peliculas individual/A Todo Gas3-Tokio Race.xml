@@ -13,7 +13,7 @@
 <fanart>http://</fanart>
 ]]></listrepeat>
 <expres>source src="([^"]+)" type="video\/mp4" label="([^"]+)p"</expres>
-<page>https://rapidvid.to/v/G6ICUORWD5</page>  ---> cambiar xxxxxxxx por id del archivo
+<page>https://rapidvid.to/v/G6ICUORWD5</page>
 </regex>
 </item>
 <item>
