@@ -1,6 +1,65 @@
-REGEX RAPIDVIDEO
+REGEX RAPIDVIDEO POR RESOLUCION
+<item>
+<title>[COLOR YELLOW]480p[/COLOR]-[COLOR White]RAPIDVIDEO[/COLOR]</title>
+<thumbnail>http://</thumbnail>
+<fanart>http://</fanart>
+<link>$dogerex[rapidvideo.param1]</link>
 <regex>
 <name>rapidvideo</name>
-<expres>source src="([^"]+)" type="video\/mp4" label=".*p"</expres>
-<page></page>
+<expres>source src="([^"]+)" type="video\/mp4" label="480p"</expres>
+<page>https://rapidvid.to/v/xxxxxxxx</page> ---> cambiar xxxxxxxx por id del archivo
 </regex>
+</item>
+
+REGEX RAPIDVIDEO MULTIRESOLUCION MENU
+<item>
+<title>[COLOR White]RAPIDVIDEO[/COLOR]</title>
+<thumbnail>http://</thumbnail>
+<fanart>http://</fanart>
+<link>$dogerex[rapidvideo]</link>
+<regex>
+<name>rapidvideo</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR blue]Resolucion:[/COLOR] [COLOR YELLOW][rapidvideo.param2]p[/COLOR]</title>
+<link>$doregex[rapidvideo.param1]</link>
+<thumbnail>http://</thumbnail>
+<fanart>http://</fanart>
+]]></listrepeat>
+<expres>source src="([^"]+)" type="video\/mp4" label="([^"]+)p"</expres>
+<page>https://rapidvid.to/v/xxxxxxxx</page> ---> cambiar xxxxxxxx por id del archivo
+</regex>
+</item>
+
+REGEX UPTOBOX/UPTOSTREAM
+<item>
+<title>[COLOR YELLOW]360p[/COLOR]-[COLOR White]UPTOBOX[/COLOR]</title>
+<thumbnail>http://</thumbnail>
+<fanart>http://</fanart>
+<link>$dogerex[uptostream.param1]</link>
+<regex>
+<name>uptostream</name>
+<expres>source src="([^"]+)" type="video\/mp4" label=".*p"</expres>
+<page>https://uptostream.com/xxxxxxxx</page> ---> cambiar xxxxxxxx por id del archivo
+</regex>
+</item>
+
+REGEX UPTOBOX/UPTOSTREAM MULTIRESOLUCION
+<item>
+<title>[COLOR White]UPTOBOX[/COLOR]</title>
+<thumbnail>http://</thumbnail>
+<fanart>http://</fanart>
+<link>$dogerex[uptostream]</link>
+<regex>
+<name>uptostream</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR blue]Resolucion:[/COLOR] [COLOR YELLOW][uptostream.param2]p[/COLOR]</title>
+<link>$doregex[uptostream.param1]</link>
+<thumbnail>http://</thumbnail>
+<fanart>http://</fanart>
+]]></listrepeat>
+<expres>source src="([^"]+)" type="video\/mp4" label="([^"]+)p"</expres>
+<page>https://uptostream.com/xxxxxxxx</page> ---> cambiar xxxxxxxx por id del archivo
+</regex>
+</item>
