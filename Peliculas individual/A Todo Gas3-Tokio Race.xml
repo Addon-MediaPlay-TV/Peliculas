@@ -1,35 +1,19 @@
 <item>
-<title>[COLOR White]RAPIDVIDEO[/COLOR]</title>
+<title>[COLOR YELLOW]RAPIDVIDEO[/COLOR]</title>
 <thumbnail>http://</thumbnail>
 <fanart>http://</fanart>
-<link>$dogerex[rapidvideo]</link>
+<urlsolve>https://www.rapidvideo.com/v/G6ICUORWD5</urlsolve>
 <regex>
-<name>rapidvideo</name>
-<listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
-<title>[COLOR blue]Resolucion:[/COLOR] [COLOR YELLOW][rapidvideo.param2]p[/COLOR]</title>
-<link>$doregex[rapidvideo.param1]</link>
-<thumbnail>http://</thumbnail>
-<fanart>http://</fanart>
-]]></listrepeat>
-<expres>source src="([^"]+)" type="video\/mp4" label="([^"]+)p"</expres>
-<page>https://rapidvid.to/v/G6ICUORWD5</page>
-</regex>
 </item>
 <item>
-<title>[COLOR YELLOW]480p[/COLOR]-[COLOR White]Streamcloud[/COLOR]</title>
+<title>[COLOR YELLOW]Streamcloud[/COLOR]</title>
 <thumbnail>http://</thumbnail>
 <fanart>http://</fanart>
 <urlsolve>http://streamcloud.eu/tqqfl9sgpj8e/Tokio_Race_By_TuPaadre.mp4.html</urlsolve>
 </item>
 <item>
-<title>[COLOR YELLOW]360p[/COLOR]-[COLOR White]UPTOBOX[/COLOR]</title>
+<title>[COLOR YELLOW]UPTOBOX[/COLOR]</title>
 <thumbnail>http://</thumbnail>
 <fanart>http://</fanart>
-<link>$dogerex[uptostream.param1]</link>
-<regex>
-<name>uptostream</name>
-<expres>source src="([^"]+)" type="video\/mp4" label=".*p"</expres>
-<page>https://uptostream.com/xxxxxxxx</page> ---> cambiar xxxxxxxx por id del archivo
-</regex>
+<urlsolve>https://uptostream.com/5dqsiqxtr2ib</urlsolve>
 </item>
