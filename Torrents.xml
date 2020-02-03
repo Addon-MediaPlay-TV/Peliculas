@@ -1,0 +1,34 @@
+<item>
+<title>     [B]DON TORRENT [/B] [I]Castellano[/I]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param1]</title>
+<link>$doregex[makelist2]</link>
+]]></listrepeat>
+<expres>-(.*?)=(.*?)"</expres>
+<page>-Series=descargar-series"-Series HD=series/hd"-Peliculas=descargar-peliculas"-Peliculas HD=descargar-peliculas/hd"-Peliculas 4K=peliculas/4K"</page>
+</regex>                                               
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>$pyFunction:('[makelist2.param3]').replace('hd',' HD').replace('uploads', '').replace('imagenes', '').replace('peliculas', '').replace('series', '').replace('/', ' ').replace('4k', ' 4K')</title>
+<link>$doregex[makelist]</link>
+<thumbnail>http:[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres>href="(.*?)".*?\n.*?src="(.*?peliculas/(.*?)\.jpg)"</expres>
+<page>https://dontorrent.com/[makelist3.param2]</page>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1]</title>
+<link>plugin://plugin.video.elementum/play?uri=https://dontorrent.com[makelist.param2]</link>
+<thumbnail>https://dontorrent.com[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[middle;'>(.*?)<.*?\n.*?href='(.*?\.torrent)']]></expres>
+<page>https://dontorrent.com[makelist2.param1]</page>
+</regex>                                               
+<thumbnail>http://blackghost.co/gray/img/torrent.png</thumbnail>
+</item>
