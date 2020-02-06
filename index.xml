@@ -6,6 +6,59 @@
 <externallink>https://raw.githubusercontent.com/Addon-MediaPlay-TV/Peliculas/master/Torrents.xml</externallink>
 </item>
 <item>
+<title>TVMEDIAPLAY</title>
+<link>$doregex[index]</link>
+<regex>
+<name>index</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[poster.param2]</title>
+<link>http://tvmediaplay.ml/movies/[link.param1]</link>
+<thumbnail>[poster.param1]</thumbnail>
+<fanart>http://</fanart>
+<info>[description.param1]</info>
+]]></listrepeat>
+<page></page>
+</regex>
+<regex>
+<name>poster</name>
+<expres>img src="([^"]+)" alt="([^"]+)"</expres>
+<page>div itemprop="description" class="wp-content"> <p>(.*?)<\/p></page>
+</regex>
+<regex>
+<name>description</name>
+<expres>img src="([^"]+)" alt="([^"]+)"</expres>
+<page>http://tvmediaplay.ml/movies/[link.param1]</page>
+</regex>
+<regex>
+<name>link</name>
+<expres>a href="http:\/\/tvmediaplay.ml\/movies([^"]+)"</expres>
+<page>http://tvmediaplay.ml/movies/</page>
+</regex>
+<regex>
+<name>ver</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[ver1nom.param1]</title>
+<link>[ver2link.param1]</link>
+<thumbnail>[poster.param1]</thumbnail>
+<fanart>http://</fanart>
+<info>[description.param1]</info>
+]]></listrepeat>
+<page></page>
+</regex>
+<regex>
+<name>ver1nom</name>
+<expres>img src='.*domain=(.*?)'</expres>
+<page>http://tvmediaplay.ml/movies/[link.param1]</page>
+</regex>
+<regex>
+<name>ver2link</name>
+<expres>a href='([^"]+)' target='_blank'</expres>
+<page>http://tvmediaplay.ml/movies/[link.param1]</page>
+</regex>
+</item>
+<item>
 <title>A TODO GAS 3: TOKIO RACE</title>
 <thumbnail>https://cdn1.megadede.com/cdn/media/peli/3/6/0/2-medium.jpg</thumbnail>
 <fanart>https://cdn6.megadede.com/cdn/media/peli/3/6/0/2-big.jpg</fanart>
